@@ -13,7 +13,7 @@ const dotenv = require("dotenv");
 dotenv.config({quiet:true});
 
 //*****************************//
-//                IMPORT  ROUTES  
+//     IMPORT  ROUTES  
 //*****************************//
 const userRoutes = require("./Routes/user");
 const equipmentRoutes = require("./Routes/equipment")
@@ -23,7 +23,7 @@ const dwrRoutes = require("./Routes/dwrs")
 const pdfRoutes = require("./Routes/pdfs")
 
 //*****************************//
-//          UTILITY FUNCTIONS / FILES
+//   UTILITY FUNCTIONS / FILES
 //*****************************//
 // const dwrFunction =  require("./utils/dwrFunction")
 //for PDF generation
@@ -72,7 +72,7 @@ async function main() {
 main();
 
 //*****************************//
-//    LISTENING FOR SERVER ON PORT
+//LISTENING FOR SERVER ON PORT
 //*****************************//
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
