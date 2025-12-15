@@ -1,0 +1,52 @@
+
+.rdp-months{
+    justify-content: center;
+    width:100%;
+    margin:30px auto;
+}
+/* //this controls the accent color on the react calander to select a date.  */
+.rdp-root {
+  --rdp-accent-color: #ff6a00 !important;
+}
+.rdp-footer{
+    text-align: center;
+}
+.tabContainer {
+  width: 80%;
+  margin: 20px auto;
+  background-color: var(--primary);
+  border-radius: 1rem;
+  border-color: #ff6a00;
+}
+
+.tabContent {
+  color: white !important;
+  padding: 5px;
+}
+
+/* for btns to float right  */
+.floatRight {
+  display: block;
+  margin-left: auto;
+}
+
+/* n customize the appearance of disabled days */
+
+.grayed-out {
+  color: #bbb;
+  background-color: #f5f5f5;
+  text-decoration: line-through;
+  pointer-events: none;
+}
+
+/* This controls the radio buttons */
+.form-check-input:checked {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.form-check-input:focus {
+  border-color: var(--secondary);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #ff6a0070;
+}

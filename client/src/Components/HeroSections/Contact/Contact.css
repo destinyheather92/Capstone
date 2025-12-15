@@ -1,0 +1,28 @@
+.contactDiv {
+  background-color: aqua;
+  width: 80%;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.contactRows {
+  justify-content: center;
+}
+.contactBtn {
+  display: block;
+  margin: 10px auto;
+  border: 1px solid white;
+}
+.contactBtn:hover {
+  border: 1px solid white;
+  background-color: var(--primary)
+}
+
+.iconSize{
+  font-size:20pt;
+}
+.contactInfo{
+  margin-left: 20px;
+  margin-right: 20px;
+
+}

@@ -1,0 +1,40 @@
+.navbar-brand {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin-left: 0px;
+  font-size: 16pt;
+  color:var(--secondary);
+  text-transform:uppercase;
+  letter-spacing: 1px;;
+}
+
+.navbar {
+  background-color: var(--primary) !important;
+}
+.navbar-nav a, .nav-link {
+  color: var(--lightText);
+}
+
+/* hover for links */
+.navbar-nav a:hover,
+.active,  .signedInText {
+  color: var(--secondary) !important;
+}
+
+/* takes away the default behavior of the background color turning blue when the user clicks on the link */
+.dropdown-item:active {
+  background-color: rgb(233, 232, 232);
+}
+/* sets the color to be dark for the nav links inside the drop down  */
+.dropdown-item a,
+.dropdown-item {
+  color: var(--darkText) !important;
+}
+
+.signedInContainer{
+  gap:15px
+}
+
+.nav-link:hover {
+  color: var(--secondary);
+}

@@ -1,0 +1,55 @@
+#pricingHeader {
+  text-align: center;
+  margin: 50px;
+}
+
+#pricingH3 {
+  font-size: 2.2rem;
+}
+
+#blackBG {
+  background-color:var(--accent);
+  color: white;
+}
+/* this is for the pro */
+#featureBG {
+  background-color: var(--secondary);
+}
+#proPlan{
+  transform:scale(110%)
+}
+#parentRow{ 
+  width:95%;
+margin:10px auto;
+/* 
+flex-wrap:nowrap; */
+
+}
+
+.cardFooter {
+  background-color: rgb(240, 236, 236);
+}
+.hover-shadow:hover {
+   box-shadow: 0 8px 16px 0 rgba(239, 239, 239, 0.2), 0 4px 20px 0 rgba(235, 235, 235, 0.19);
+}
+.signUpBtn {
+  display: block;
+  margin: 0px auto;
+  padding: 10px;
+  background-color: var(--accent);
+  color: white;
+  border-style: none;
+}
+
+.signUpBtn:hover {
+  background-color: rgb(181, 181, 181);
+  color: black;
+}
+
+.prices {
+  padding: 20px;
+}
+
+.priceOpacity {
+  opacity: 0.6;
+}

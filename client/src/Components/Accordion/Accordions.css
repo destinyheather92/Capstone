@@ -1,0 +1,33 @@
+.accordion-button {
+  background-color: var(--primary);
+  color: white;
+  padding-right:0px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary);
+  color: rgb(255, 106, 0);
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem #1d2833;
+}
+.accordion-button:not(.collapsed)::after{
+   background-image: unset;
+  padding: 0;
+  margin: 0;
+}
+.accordion-button:after {
+  background-image: unset;
+  padding: 0;
+  margin: 0;
+}
+.accordianBtn {
+  display: inline-block;
+ margin-left: auto;
+}
+
+.deleteDWR{
+  margin-left:auto !important;;
+  display:block;
+  background-color: var(--error) !important;
+}

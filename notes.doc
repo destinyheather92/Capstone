@@ -1,0 +1,213 @@
+//this is just an updated way to operate mongoose. 
+
+
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 8080;
+const mongoose = require(`mongoose`);
+const Person = require("./Model/person");
+
+mongoose.connect("mongodb://127.0.0.1:27017/myfirstapi");
+
+//middleware
+app.use(express.json());
+
+app.post("/person", async (req, res) => {
+  let newPerson = req.body;
+  try {
+    let createdPerson = await Person.create(newPerson);
+    createdPerson.save();
+    res.send(createdPerson);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal server error");
+  }
+});
+
+app.post("/people", async (req, res) => {
+  let newPerson = req.body;
+  try {
+    let createdPerson = await Person.insertMany(newPerson);
+
+    res.send(createdPerson);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal server error");
+  }
+});
+
+app.get("/people/:name", async (req, res) => {
+  let name = req.params.name;
+  console.log(name);
+  try {
+    let foundPerson = await Person.find({ name });
+    res.send(foundPerson);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal server error");
+  }
+});
+
+//check out bruno route for this, even though its in an array its searching through the array.
+app.get("/food/:food", async (req, res) => {
+  let food = req.params.food;
+  try {
+    let foundFood = await Person.findOne({ favoriteFoods: food });
+    res.send(foundFood);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal server error");
+  }
+});
+
+app.get("/person/id/:id", async (req, res) => {
+  let id = req.params.id;
+  try {
+    let foundPerson = await Person.findById(id);
+    res.json({ data: foundPerson });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal server error");
+  }
+});
+
+app.put("/person/addFood/:id", async (req, res) => {
+  let id = req.params.id;
+  let { food } = req.body;
+  try {
+    let foundPerson = await Person.findById(id);
+    //take whats already in there, spread it add the new food.
+    foundPerson
+      .set({ favoriteFoods: [...foundPerson.favoriteFoods, food] })
+      .save();
+    res.json({ data: foundPerson });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal server error");
+  }
+});
+app.put("/person/update-age/:id", async (req, res) => {
+  let id = req.params.id;
+  let { age } = req.body;
+  try {
+    let foundPerson = await Person.findOneAndUpdate(
+      { _id: id },
+      { age },
+      { new: true }
+    );
+    //this is needed to save in the db
+    foundPerson.save();
+    res.json({ data: foundPerson });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal server error");
+  }
+});
+
+app.delete("/person/id/:id", async (req, res) => {
+  let id = req.params.id;
+  try {
+    let deletedPerson = await Person.findByIdAndDelete(id);
+    res.json({ data: deletedPerson });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal server error");
+  }
+});
+
+app.delete("/people/:name", async (req, res) => {
+  let name = req.params.name;
+  try {
+    let deletedPerson = await Person.deleteMany({ name });
+    res.json({ data: deletedPerson });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal server error");
+  }
+});
+
+app.get("/foods/:food", async (req, res) => {
+  let food = req.params.food;
+  try {
+    let findFood = await Person.find({ favoriteFoods: food })
+      .sort({ name: -1 })
+      .limit(10)
+      .select("name favoriteFoods")
+      .exec();
+
+    res.json({ data: findFood });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal server error");
+  }
+});
+//{
+//   "data": {
+//     "acknowledged": true,
+//     "deletedCount": 3
+//   }
+// }
+// is there a way to return other stuff here??
+
+//start server:
+app.listen(port, () => {
+  console.log(`Server listening on Port: ${port}`);
+});
+
+//An async function declaration creates an AsyncFunction object. Each time when an async function is called, it returns a new Promise which will be resolved with the value returned by the async function, or rejected with an exception uncaught within the async function.
+
+// Async functions can contain zero or more await expressions. Await expressions make promise-returning functions behave as though they're synchronous by suspending execution until the returned promise is fulfilled or rejected. The resolved value of the promise is treated as the return value of the await expression. Use of async and await enables the use of ordinary try / catch blocks around asynchronous code.
+
+
+
+
+
+
+RELOADD ON CLIENT INSTEAD OF WINDOW>LOCATION RELOAD
+// Parent.jsx
+import { useState } from "react";
+import DocumentPage from "./DocumentPage";
+
+export default function Parent({ docId }) {
+  const [refreshKey, setRefreshKey] = useState(0);
+
+  return (
+    <DocumentPage
+      key={`${docId}-${refreshKey}`}
+      docId={docId}
+      onDeleted={() => setRefreshKey(k => k + 1)}
+    />
+  );
+}
+
+// DocumentPage.jsx
+import { useEffect, useState } from "react";
+import api from "./api";
+
+export default function DocumentPage({ docId, onDeleted }) {
+  const [doc, setDoc] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const res = await api.get(`/docs/${docId}`);
+      if (!cancelled) setDoc(res.data); // handles initial mount & every remount
+    })();
+    return () => { cancelled = true; };
+  }, [docId]);
+
+  async function handleDelete() {
+    await api.delete(`/docs/${docId}`);
+    onDeleted(); // ? bump key -> full remount -> all local state reset
+    // Optional UX: navigate('/docs') if the doc no longer exists.
+  }
+
+  if (!doc) return <p>Loading…</p>;
+  return (
+    <>
+      {/* render doc */}
+      <button onClick={handleDelete}>Delete</button>
+    </>
+  );
+}
+

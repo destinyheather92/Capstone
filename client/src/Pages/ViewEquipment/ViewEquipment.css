@@ -1,0 +1,16 @@
+.eqTable {
+    width:80%;
+    margin:auto;
+}
+.eqTable thead{
+    text-align: center;
+}
+
+.sortIcon{
+    cursor:pointer;
+    margin-left:5px
+}
+
+.sortIcon:hover{
+    color: var(--secondary)
+}

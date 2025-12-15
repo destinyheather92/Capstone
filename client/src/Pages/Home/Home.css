@@ -1,0 +1,17 @@
+.form-control:focus,
+.form-select:focus {
+  border-color: rgb(249, 249, 249);
+  box-shadow: 0 0 0 0.15rem var(--secondary);
+}
+
+.footerImg {
+  display: block;
+  margin: 30px auto;
+  width: 70%;
+}
+.footer {
+  background-color: var(--primary);
+  color: azure;
+  text-align: center;
+}
+

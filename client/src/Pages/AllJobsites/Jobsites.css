@@ -1,0 +1,23 @@
+#jobsitesParent{
+    display:flex;
+    width:80%;
+    flex-wrap: wrap;
+    gap:20px;
+    margin:0px auto;
+    justify-content: center;
+}
+.jobsiteCards{
+    text-align: center;
+    font-size:14pt;
+}
+.jobsiteCards button{
+    background-color: var(--accent3);
+    color:var(--darkText);
+    display:block;
+    margin:auto;
+}
+
+.jobsiteCards button:hover{
+    background-color: var(--secondary);
+
+}

@@ -1,0 +1,117 @@
+:root {
+  --lightGray: #a9a9a9;
+  /* colors from chat gpt */
+  --primary: #2a3f54;
+  --secondary: rgb(255, 106, 0);
+  --accent3: #d6d6d6;
+  --accent: #7a8a99;
+  --background: rgb(245, 247, 250);
+  --darkText: #1f2d3d;
+  --lightText: #ffffff;
+  --success: #28a745;
+  --warning: #ffc107;
+  --error: #dc3545;
+}
+@font-face {
+  font-family: jakarta;
+  src: url(./assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf);
+}
+a {
+  font-weight: 500;
+  color: var(--darkSlate);
+  text-decoration: inherit;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--darkText);
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: jakarta, sans-serif;
+  line-height: 1.7;
+}
+
+h1,
+.header {
+  font-size: 2.2rem;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--secondary);
+  width: fit-content;
+  margin: 20px auto;
+}
+
+/* btns */
+.primaryBtn {
+  background-color: var(--secondary);
+  display: block;
+  margin: 5px auto;
+}
+
+#basicBtn {
+  background-color: var(--primary);
+  color:white;
+  border: 1px solid white;
+}
+#basicBtn:hover {
+  background-color: var(--secondary);
+}
+
+#deleteCoBtn{
+  float:right;
+}
+
+.accentBtns {
+  background-color: var(--accent);
+}
+/* accent bG */
+.accentBG {
+  background-color: var(--accent) !important;
+  margin-top: 20px;
+  padding: 30px;
+  color: white;
+}
+.accent2 {
+  background-color: var(--primary);
+  margin-top: 20px;
+  padding: 30px;
+  color: white;
+}
+.accent3 {
+  background-color: var(--accent3);
+  padding: 30px;
+}
+.alert {
+  color: #a9a9a9;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.centerBtn {
+  margin: 0px auto;
+  display: block;
+}
+#flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.success {
+  color: var(--success);
+}
+.error {
+  color: var(--error);
+}
+.secondaryText {
+  color: var(--secondary);
+}
+
+/* this is to change the background color on the modal  where the pdf is generated*/
+.bg-light{
+background-color: var(--accent) !important
+}

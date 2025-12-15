@@ -1,0 +1,159 @@
+Date : 2025-10-09 14:29:22
+Directory : c:\Users\PCC 21\Desktop\ConstructionApp_Modified
+Total : 82 files,  11577 codes, 455 comments, 370 blanks, all 12402 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          6 |      7,544 |          0 |          6 |      7,550 |
+| JavaScript JSX |         40 |      2,864 |        130 |        209 |      3,203 |
+| JavaScript     |         18 |        764 |        309 |         95 |      1,168 |
+| PostCSS        |         14 |        383 |         16 |         53 |        452 |
+| HTML           |          1 |         13 |          0 |          1 |         14 |
+| Markdown       |          1 |          7 |          0 |          6 |         13 |
+| Shell Script   |          1 |          1 |          0 |          0 |          1 |
+| XML            |          1 |          1 |          0 |          0 |          1 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                             |         82 |     11,577 |        455 |        370 |     12,402 |
+| . (Files)                                                                                                     |          3 |        733 |          0 |          2 |        735 |
+| client                                                                                                        |         62 |      7,031 |        147 |        275 |      7,453 |
+| client (Files)                                                                                                |          6 |      3,776 |          1 |         13 |      3,790 |
+| client\public                                                                                                 |          1 |          1 |          0 |          0 |          1 |
+| client\src                                                                                                    |         55 |      3,254 |        146 |        262 |      3,662 |
+| client\src (Files)                                                                                            |          3 |        185 |         10 |         21 |        216 |
+| client\src\Components                                                                                         |         35 |      2,289 |         80 |        160 |      2,529 |
+| client\src\Components\Accordion                                                                               |          2 |        367 |          7 |         25 |        399 |
+| client\src\Components\Buttons                                                                                 |          1 |          6 |          0 |          4 |         10 |
+| client\src\Components\Cards                                                                                   |          2 |         50 |          1 |          3 |         54 |
+| client\src\Components\DWRTabs                                                                                 |          4 |        261 |         11 |         20 |        292 |
+| client\src\Components\DWRTabs (Files)                                                                         |          1 |        144 |         11 |          6 |        161 |
+| client\src\Components\DWRTabs\TABS                                                                            |          3 |        117 |          0 |         14 |        131 |
+| client\src\Components\Footer                                                                                  |          1 |         33 |          0 |          2 |         35 |
+| client\src\Components\Forms                                                                                   |          2 |        286 |         25 |         13 |        324 |
+| client\src\Components\Header                                                                                  |          1 |          5 |          0 |          0 |          5 |
+| client\src\Components\HeroSections                                                                            |         12 |        422 |          8 |         47 |        477 |
+| client\src\Components\HeroSections\About                                                                      |          2 |         30 |          0 |          5 |         35 |
+| client\src\Components\HeroSections\Contact                                                                    |          2 |        132 |          3 |         16 |        151 |
+| client\src\Components\HeroSections\Hero                                                                       |          2 |         68 |          1 |          7 |         76 |
+| client\src\Components\HeroSections\Pricing                                                                    |          2 |        102 |          3 |         12 |        117 |
+| client\src\Components\HeroSections\Skills                                                                     |          2 |         53 |          1 |          4 |         58 |
+| client\src\Components\HeroSections\Statistics                                                                 |          2 |         37 |          0 |          3 |         40 |
+| client\src\Components\Modals                                                                                  |          3 |        430 |          4 |         18 |        452 |
+| client\src\Components\Navbar                                                                                  |          2 |        109 |         11 |          7 |        127 |
+| client\src\Components\ProtectedRoute                                                                          |          1 |         39 |          1 |          9 |         49 |
+| client\src\Components\Tables                                                                                  |          4 |        281 |         12 |         12 |        305 |
+| client\src\Components\Tables (Files)                                                                          |          3 |        274 |         12 |         12 |        298 |
+| client\src\Components\Tables\Utils                                                                            |          1 |          7 |          0 |          0 |          7 |
+| client\src\Context                                                                                            |          2 |         20 |          0 |          4 |         24 |
+| client\src\Pages                                                                                              |         15 |        760 |         56 |         77 |        893 |
+| client\src\Pages\AdminAccess                                                                                  |          6 |        445 |         35 |         40 |        520 |
+| client\src\Pages\AdminAccess\EditDWRs                                                                         |          1 |        151 |         12 |          9 |        172 |
+| client\src\Pages\AdminAccess\EditEmployees                                                                    |          1 |         72 |          0 |         10 |         82 |
+| client\src\Pages\AdminAccess\EditEquipment                                                                    |          1 |         68 |          3 |          6 |         77 |
+| client\src\Pages\AdminAccess\EditJobsite                                                                      |          2 |         80 |          1 |          7 |         88 |
+| client\src\Pages\AdminAccess\EditProfile                                                                      |          1 |         74 |         19 |          8 |        101 |
+| client\src\Pages\AllJobsites                                                                                  |          2 |         51 |          0 |          4 |         55 |
+| client\src\Pages\Home                                                                                         |          2 |         78 |         10 |         10 |         98 |
+| client\src\Pages\Jobsite                                                                                      |          2 |         87 |          9 |         14 |        110 |
+| client\src\Pages\Register                                                                                     |          1 |         60 |          2 |          5 |         67 |
+| client\src\Pages\ViewEquipment                                                                                |          2 |         39 |          0 |          4 |         43 |
+| server                                                                                                        |         17 |      3,813 |        308 |         93 |      4,214 |
+| server (Files)                                                                                                |          3 |      3,122 |         23 |          9 |      3,154 |
+| server\Models                                                                                                 |          9 |         92 |         53 |         33 |        178 |
+| server\Routes                                                                                                 |          5 |        599 |        232 |         51 |        882 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                                      | language       | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\.codelineignore                                              | Shell Script   |          1 |          0 |          0 |          1 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\README.md                                             | Markdown       |          7 |          0 |          6 |         13 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\eslint.config.js                                      | JavaScript     |         28 |          0 |          2 |         30 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\index.html                                            | HTML           |         13 |          0 |          1 |         14 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\package-lock.json                                     | JSON           |      3,683 |          0 |          1 |      3,684 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\package.json                                          | JSON           |         40 |          0 |          1 |         41 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\public\vite.svg                                       | XML            |          1 |          0 |          0 |          1 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\App.css                                           | PostCSS        |        110 |          6 |         11 |        127 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\App.jsx                                           | JavaScript JSX |         67 |          4 |          8 |         79 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Accordion\Accordions.css               | PostCSS        |         26 |          0 |          3 |         29 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Accordion\Accordions.jsx               | JavaScript JSX |        341 |          7 |         22 |        370 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Buttons\Buttons.jsx                    | JavaScript JSX |          6 |          0 |          4 |         10 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Cards\Cards.jsx                        | JavaScript JSX |         20 |          0 |          2 |         22 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Cards\PricingCards.jsx                 | JavaScript JSX |         30 |          1 |          1 |         32 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\DWRTabs\DWRTabs.jsx                    | JavaScript JSX |        144 |         11 |          6 |        161 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\DWRTabs\TABS\EquipmentUsedTab.jsx      | JavaScript JSX |         44 |          0 |          6 |         50 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\DWRTabs\TABS\IncidentsTab.jsx          | JavaScript JSX |         33 |          0 |          3 |         36 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\DWRTabs\TABS\LoadsTab.jsx              | JavaScript JSX |         40 |          0 |          5 |         45 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Footer\Footer.jsx                      | JavaScript JSX |         33 |          0 |          2 |         35 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Forms\LogIn.jsx                        | JavaScript JSX |         76 |          4 |          4 |         84 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Forms\Register.jsx                     | JavaScript JSX |        210 |         21 |          9 |        240 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Header\Header.jsx                      | JavaScript JSX |          5 |          0 |          0 |          5 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\About\About.css           | PostCSS        |          4 |          0 |          1 |          5 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\About\About.jsx           | JavaScript JSX |         26 |          0 |          4 |         30 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\Contact\Contact.css       | PostCSS        |         25 |          0 |          3 |         28 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\Contact\Contact.jsx       | JavaScript JSX |        107 |          3 |         13 |        123 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\Hero\Hero.css             | PostCSS        |         50 |          0 |          4 |         54 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\Hero\Hero.jsx             | JavaScript JSX |         18 |          1 |          3 |         22 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\Pricing\Pricing.css       | PostCSS        |         45 |          3 |          8 |         56 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\Pricing\Pricing.jsx       | JavaScript JSX |         57 |          0 |          4 |         61 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\Skills\Skills.css         | PostCSS        |          3 |          0 |          2 |          5 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\Skills\Skills.jsx         | JavaScript JSX |         50 |          1 |          2 |         53 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\Statistics\Statistics.css | PostCSS        |          6 |          0 |          2 |          8 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\HeroSections\Statistics\Statistics.jsx | JavaScript JSX |         31 |          0 |          1 |         32 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Modals\EditEmployeesModal.jsx          | JavaScript JSX |        162 |          2 |          9 |        173 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Modals\EditEquipmentModal.jsx          | JavaScript JSX |        123 |          1 |          5 |        129 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Modals\EditJobsiteModal.jsx            | JavaScript JSX |        145 |          1 |          4 |        150 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Navbar\NavBar.jsx                      | JavaScript JSX |         83 |          8 |          3 |         94 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Navbar\Navbar.css                      | PostCSS        |         26 |          3 |          4 |         33 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\ProtectedRoute\ProtectedRoute.jsx      | JavaScript JSX |         39 |          1 |          9 |         49 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Tables\EmployeeTable.jsx               | JavaScript JSX |         83 |          3 |          4 |         90 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Tables\EqTables.jsx                    | JavaScript JSX |        108 |          6 |          3 |        117 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Tables\JobsiteTable.jsx                | JavaScript JSX |         83 |          3 |          5 |         91 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Components\Tables\Utils\sortData.js               | JavaScript     |          7 |          0 |          0 |          7 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Context\ConstructionAppContext.jsx                | JavaScript JSX |          3 |          0 |          1 |          4 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Context\ConstructionAppProvider.jsx               | JavaScript JSX |         17 |          0 |          3 |         20 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\AdminAccess\EditDWRs\EditDWRs.jsx           | JavaScript JSX |        151 |         12 |          9 |        172 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\AdminAccess\EditEmployees\EditEmployees.jsx | JavaScript JSX |         72 |          0 |         10 |         82 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\AdminAccess\EditEquipment\EditEquipment.jsx | JavaScript JSX |         68 |          3 |          6 |         77 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\AdminAccess\EditJobsite\EditJobsite.css     | PostCSS        |          7 |          0 |          1 |          8 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\AdminAccess\EditJobsite\EditJobsites.jsx    | JavaScript JSX |         73 |          1 |          6 |         80 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\AdminAccess\EditProfile\EditProfile.jsx     | JavaScript JSX |         74 |         19 |          8 |        101 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\AllJobsites\Jobsites.css                    | PostCSS        |         11 |          0 |          1 |         12 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\AllJobsites\Jobsites.jsx                    | JavaScript JSX |         40 |          0 |          3 |         43 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\Home\Home.css                               | PostCSS        |         15 |          0 |          3 |         18 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\Home\Home.jsx                               | JavaScript JSX |         63 |         10 |          7 |         80 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\Jobsite\Jobsite.css                         | PostCSS        |         41 |          4 |          8 |         53 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\Jobsite\Jobsite.jsx                         | JavaScript JSX |         46 |          5 |          6 |         57 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\Register\RegisterPage.jsx                   | JavaScript JSX |         60 |          2 |          5 |         67 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\ViewEquipment\ViewEquipment.css             | PostCSS        |         14 |          0 |          2 |         16 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\Pages\ViewEquipment\ViewEquipment.jsx             | JavaScript JSX |         25 |          0 |          2 |         27 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\src\main.jsx                                          | JavaScript JSX |          8 |          0 |          2 |         10 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\client\vite.config.js                                        | JavaScript     |          5 |          1 |          2 |          8 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\package-lock.json                                            | JSON           |        712 |          0 |          1 |        713 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\package.json                                                 | JSON           |         20 |          0 |          1 |         21 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Models\companyModel.js                                | JavaScript     |         22 |         36 |          4 |         62 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Models\dwrSchema.js                                   | JavaScript     |         13 |          0 |          3 |         16 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Models\employeeSchema.js                              | JavaScript     |          8 |          1 |          4 |         13 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Models\equipUsed.js                                   | JavaScript     |          7 |          0 |          3 |         10 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Models\equipmentSchema.js                             | JavaScript     |          6 |          1 |          5 |         12 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Models\incidentsSchema.js                             | JavaScript     |          6 |          0 |          2 |          8 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Models\jobsiteSchema.js                               | JavaScript     |          9 |          3 |          5 |         17 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Models\loadsSchema.js                                 | JavaScript     |          7 |          2 |          3 |         12 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Models\usersModel.js                                  | JavaScript     |         14 |         10 |          4 |         28 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Routes\dwrs.js                                        | JavaScript     |        122 |         40 |         15 |        177 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Routes\equipment.js                                   | JavaScript     |         61 |         39 |          9 |        109 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Routes\jobs.js                                        | JavaScript     |         78 |         50 |         11 |        139 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Routes\loads.js                                       | JavaScript     |          0 |         19 |          3 |         22 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\Routes\user.js                                        | JavaScript     |        338 |         84 |         13 |        435 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\package-lock.json                                     | JSON           |      3,051 |          0 |          1 |      3,052 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\package.json                                          | JSON           |         38 |          0 |          1 |         39 |
+| c:\Users\PCC 21\Desktop\ConstructionApp_Modified\server\server.js                                             | JavaScript     |         33 |         23 |          7 |         63 |
+| Total                                                                                                         |                |     11,577 |        455 |        370 |     12,402 |
++---------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
